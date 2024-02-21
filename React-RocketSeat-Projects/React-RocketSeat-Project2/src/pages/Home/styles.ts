@@ -97,7 +97,7 @@ justify-content: center;
 `
 
 
-export const StartCountdownButton = styled.button`
+export const BaseCountdownButton = styled.button`
 
 width: 100%;
 border: 0;
@@ -126,10 +126,11 @@ color: ${(props) => props.theme[`gray-100`]};
     background-color: ${(props) => props.theme[`green-700`]};
 
 }
-
-
-
-
 `
 
+export const StartCountdownButton = styled(BaseCountdownButton)`
+`
+
+export const StopCountdownButton = styled(BaseCountdownButton)`
+`
 
